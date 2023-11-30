@@ -106,13 +106,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="preferencias.html">Preferencias</a></li>
                 <li><a href="audiovisuales.html">Audiovisuales</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="contenedor-formulario">
-        <form>
+        <form action="envio.php" method="post" target="_blank">
             <label for="nombre">Nombre: </label>
             <input type="text" id="nombre" name="nombre" placeholder="Escribí aquí tu nombre" required minlength="3">
             <label for="apellido">Apellido: </label>
@@ -130,7 +130,7 @@
                 <option value="Colombia">Colombia</option>
                 <option value="Venezuela">Venezuela</option>
                 <option value="Paraguay">Paraguay</option>
-                <option value="Ecuaador">Ecuaador</option>
+                <option value="Ecuador">Ecuador</option>
             </select>
             <label for="comentario">Comentario: </label>
             <textarea name="comentario" id="comentario" placeholder="Escribí aquí tu comentario"></textarea>
